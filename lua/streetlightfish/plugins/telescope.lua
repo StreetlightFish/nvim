@@ -1,4 +1,5 @@
 return {
+  {
   "nvim-telescope/telescope.nvim",
   branch = "0.1.x",
   dependencies = {
@@ -47,4 +48,19 @@ return {
     keymap.set("n", "<leader>f/", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
     keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
   end,
+  },
+  {
+    "nvim-telescope/telescope-ui-select.nvim",
+    config = function ()
+      require("telescope").setup ({
+        extensions = {
+          ["ui-select"] = {
+            require("telescope.themes").get_dropdown {
+            }
+          }
+        }
+      })
+      require("telescope").load_extension("ui-select")
+    end
+  },
 }

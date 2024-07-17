@@ -12,12 +12,18 @@ return {
       view = {
         width = 35,
         side = "right",
+        signcolumn = "enabled",
       },
       -- change folder arrow icons
       renderer = {
+        icons = {
+          git_placement = "signcolumn",
+        },
         indent_markers = {
           enable = true,
         },
+        highlight_git = "all",
+        highlight_modified = "all",
       },
       -- disable window_picker for
       -- explorer to work well with
@@ -30,10 +36,18 @@ return {
         },
       },
       filters = {
+        dotfiles = true,
         custom = { ".DS_Store" },
       },
       git = {
         ignore = false,
+        unstaged = "",
+        staged = "✓",
+        unmerged = "",
+        renamed = "➜",
+        untracked = "★",
+        deleted = "",
+        ignored = "◌",
       },
     })
 

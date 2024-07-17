@@ -17,6 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   {import = "streetlightfish.plugins"},
+  {import = "streetlightfish.plugins.lsp"},
 },
 {
   checker = {
