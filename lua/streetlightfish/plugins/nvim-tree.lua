@@ -12,12 +12,33 @@ return {
       view = {
         width = 35,
         side = "right",
-        signcolumn = "enabled",
+        signcolumn = "yes",
       },
       -- change folder arrow icons
       renderer = {
         icons = {
+          web_devicons = {
+            file = {
+              enable = true,
+              color = true,
+            },
+            folder = {
+              enable = true,
+              color = true,
+            },
+          },
           git_placement = "signcolumn",
+          glyphs = {
+            git = {
+              unstaged = "",
+              staged = "󰄵",
+              unmerged = "",
+              renamed = "➜",
+              untracked = "★",
+              deleted = "",
+              ignored = "◌",
+            },
+          },
         },
         indent_markers = {
           enable = true,
@@ -39,16 +60,7 @@ return {
         dotfiles = true,
         custom = { ".DS_Store" },
       },
-      git = {
-        ignore = false,
-        unstaged = "",
-        staged = "✓",
-        unmerged = "",
-        renamed = "➜",
-        untracked = "★",
-        deleted = "",
-        ignored = "◌",
-      },
+      
     })
 
     -- set keymaps
