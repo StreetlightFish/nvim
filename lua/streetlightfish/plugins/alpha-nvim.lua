@@ -6,7 +6,7 @@ return {
 	},
 	config = function()
 		local alpha = require("alpha")
-		local dashboard = require("alpha.themes.dashboard")
+		local dashboard = require("alpha.themes.startify")
 
 		-- Modify the header text located at layout[2]
 		dashboard.section.header.val = {
