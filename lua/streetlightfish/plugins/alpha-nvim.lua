@@ -25,6 +25,7 @@ return {
 			[[                    ██║     ██║███████║██║  ██║          `·.¸ `·  ¸.·´\`·¸)            ]],
 			[[                    ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝              `\\´´\¸.·´                ]],
 		}
+    dashboard.section.mru.val = { { type = "padding", val = 0 } }
 		-- Set up alpha with the modified theme configuration
 		alpha.setup(dashboard.config)
 	end,
