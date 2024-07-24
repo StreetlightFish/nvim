@@ -57,7 +57,7 @@ return {
 				},
 			},
 			filters = {
-				dotfiles = true,
+				dotfiles = false,
 				custom = { ".DS_Store" },
 			},
 		})
